@@ -27,8 +27,18 @@
  * policies, either expressed or implied, of Mike Doyal.
  */
 
-package com.ptbr.plug;
+package com.ptbr.engine;
 
-public abstract class Plugin {
-
+public enum GameObjectType {
+	Follower,
+	Building,
+	Creature,
+	Vehicle,
+	Scenery,
+	General,
+	Effect,
+	Shot,
+	Shape,
+	Internal,
+	Spell;
 }

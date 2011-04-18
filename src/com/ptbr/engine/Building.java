@@ -27,8 +27,26 @@
  * policies, either expressed or implied, of Mike Doyal.
  */
 
-package com.ptbr.plug;
+package com.ptbr.engine;
 
-public abstract class Plugin {
+public class Building extends GameObject {
 
+	
+	public static enum BuildingType {
+		SmallHut,
+		MediumHut,
+		LargeHut,
+		GuardTower,
+		Temple,
+		SpyTrainingHut,
+		WarriorTrainingHut,
+		FirewarriorTrainingHut,
+		BoatHut,
+		BoatHut2,
+		BalloonHut,
+		BalloonHut2,
+		GuardPost,
+		VaultOfKnowledge,
+		Prison;
+	}
 }

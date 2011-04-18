@@ -27,8 +27,43 @@
  * policies, either expressed or implied, of Mike Doyal.
  */
 
-package com.ptbr.plug;
+package com.ptbr.engine;
 
-public abstract class Plugin {
+/**
+ * @author mike
+ * 
+ */
+public abstract class GameObject {
+	protected GameObjectType type;
+	protected int x;
+	protected int y;
+	protected Tribe owner;
 
+	/**
+	 * Returns the x coordinate of this GameObject.
+	 * 
+	 * @return The x coordinate
+	 */
+	public final int getX() {
+		return x;
+	}
+
+	/**
+	 * Returns the y coordinate of this GameObject.
+	 * 
+	 * @return The y coordinate
+	 */
+	public final int getY() {
+		return y;
+	}
+
+	/**
+	 * @param x
+	 * @param y
+	 */
+	protected final void setPosition(int x, int y) {
+		// TODO: Add parameter checks.
+		this.x = x;
+		this.y = y;
+	}
 }

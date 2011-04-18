@@ -27,8 +27,11 @@
  * policies, either expressed or implied, of Mike Doyal.
  */
 
-package com.ptbr.plug;
+package com.ptbr.engine;
 
-public abstract class Plugin {
-
+public enum Tribe {
+	BlueTribe,
+	Dakini,
+	Chumara,
+	Matak;
 }

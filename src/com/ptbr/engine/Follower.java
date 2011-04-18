@@ -27,8 +27,15 @@
  * policies, either expressed or implied, of Mike Doyal.
  */
 
-package com.ptbr.plug;
+package com.ptbr.engine;
 
-public abstract class Plugin {
+public class Follower extends GameObject {
+	private int life;
+	private int strength;
+	private int slast;
+	private int scale;
 
+	public static enum FollowerType {
+		Wildman, Brave, Warrior, Preacher, Spy, Firewarrior, Shaman, AngelOfDeath;
+	}
 }
